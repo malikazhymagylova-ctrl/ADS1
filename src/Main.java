@@ -28,13 +28,13 @@
 
     // O(n)
     //one recursive call for each power
-    public static int sumPowers(int a, int n) {
-        if (n == 1) return a;
-        return (int)Math.pow(a, n) + sumPowers(a, n - 1);
+    public static int sumPowers(int b, int n) {
+        if (n == 0) return 1;
+        return (int)Math.pow(b, n) + sumPowers(b, n - 1);
     }
 
     // O(n)
-    //each element is printed once
+     //each element is printed once
     public static void reverseArray(int[] arr, int index) {
         if (index < 0) return;
         System.out.print(arr[index] + " ");
